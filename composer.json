@@ -1,0 +1,12 @@
+{
+    "name": "vendor/nventory-management",
+    "description": "Inventory management test app",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "7"
+    }
+}
