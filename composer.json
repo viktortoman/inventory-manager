@@ -1,5 +1,5 @@
 {
-    "name": "vendor/nventory-management",
+    "name": "vendor/inventory-management",
     "description": "Inventory management test app",
     "autoload": {
         "psr-4": {
