@@ -81,15 +81,11 @@ class Utils
         }
     }
 
-    public function getAllProductsInInventory(array $inventory)
+    public function getAllProductsInInventory(array $inventory): array
     {
-
-        $this->pre($inventory);
-        die;
-
         return [
-            'inventory' => $inventory['name'],
-            'products' => $inventory['stock'],
+            'inventory' => $inventory['data']['name'],
+            'products' => $inventory['data']['stock'],
         ];
     }
 
@@ -221,12 +217,5 @@ class Utils
                 'error' => $e->getMessage()
             ];
         }
-    }
-
-    public function pre($data)
-    {
-        echo "<pre>";
-        print_r($data);
-        echo "</pre>";
     }
 }
